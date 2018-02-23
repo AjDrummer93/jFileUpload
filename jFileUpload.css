@@ -1,0 +1,79 @@
+.file-upload-container {
+    position: relative;
+}
+
+.file-upload-container input.file-uploader {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.file-upload-container input.file-uploader + label {
+    position: relative;
+    background: #FFFFFF;
+    width: 100%;
+    display: inline-block;
+    outline: none;
+    font-size: 14px;
+    color: inherit;
+    cursor: pointer;
+    margin-bottom: 0;
+    line-height: 40px;
+    overflow: hidden;
+    border: 1px solid #DDDDDD;
+    height: 40px;
+    border-radius: 0;
+}
+
+.file-upload-container input.file-uploader + label .file-name {
+    text-align: left;
+    padding: 0 15px;
+    overflow: hidden;
+    display: block;
+    width: 65%;
+    white-space: nowrap;
+    color: #999999;
+}
+
+.file-upload-container input.file-uploader + label .file-name.selected {
+    color: inherit;
+}
+
+.file-upload-container input.file-uploader + label .file-upload-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: #777777;
+    color: #FFFFFF;
+    padding: 0 15px;
+    z-index: 2;
+    transition: background 250ms linear;
+}
+
+.file-upload-container input.file-uploader + label .file-upload-btn:hover {
+    background: #999999;
+}
+
+.file-upload-container .remove-file {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    background: #C35F5F;
+    color: #FFFFFF;
+    padding: 0 15px;
+    top: 0px;
+    right: 0;
+    height: 100%;
+}
+
+.file-upload-container .remove-file:hover {
+    background: #DE7B7B;
+}
